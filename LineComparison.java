@@ -30,10 +30,11 @@ public class LineComparison{
 	y4 = reader.nextDouble();
 	
 	double length1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+	String str1 = Double.toString(length1);	
         double length2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
-            if (length1 == length2)
-                System.out.println("Lines are equal in length.");
-            else
-                System.out.println("Lines are not equal in length.");
+	String str2 = Double.toString(length2);	
+         
+                System.out.println(str1.equals(str2));
+        
 	}
        } 	

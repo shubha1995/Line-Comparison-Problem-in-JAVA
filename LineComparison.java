@@ -1,7 +1,9 @@
+package com.prgram;
+
 import java.util.Scanner;
 import java.lang.Math;
 public class LineComparison{
-	public static void main(String[] args){
+	public static void compareLine() {
 	double x1;
 	double y1;
 	double x2;
@@ -10,6 +12,7 @@ public class LineComparison{
 	double y3;
 	double x4;
 	double y4;
+	
 	Scanner reader = new Scanner(System.in);
 
 	System.out.println("Enter x1");
@@ -31,10 +34,16 @@ public class LineComparison{
 	
 	double length1 = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 	String str1 = Double.toString(length1);	
-        double length2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
+    double length2 = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
 	String str2 = Double.toString(length2);	
+	
+	System.out.println(str2.compareTo(str1));
          
-                System.out.println(str2.compareTo(str1));
-        
+    }
+	
+	public static void main(String[] args){
+		compareLine();
+		 
+		
 	}
-       } 	
+       } 
